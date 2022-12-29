@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps{
+                // get some code from github repo
+                git 'https://github.com/AdminTurnedDevOps/go-webapp-sample.git'
+            }
+        }
+    }
+}
